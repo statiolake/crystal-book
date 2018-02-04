@@ -1,27 +1,27 @@
-# On Mac OSX using Homebrew
+# Mac OSX (Homebrew)
 
-To easily install Crystal on Mac you can use [Homebrew](http://brew.sh/).
+Mac に Crystal を簡単にインストールするには、 [Homebrew](http://brew.sh/) を使う手があります。
 
 ```
 brew update
 brew install crystal-lang
 ```
 
-If you're planning to contribute to the language itself you might find useful to install LLVM as well. So replace the last line with:
+もし言語そのものに貢献しようと考えているなら LLVM を同時にインストールするとよいかもしれません。最後の行を次のように書き換えてください。
 
 ```
 brew install crystal-lang --with-llvm
 ```
 
-## Troubleshooting on OSX 10.11 (El Capitan)
+## OSX 10.11 (El Capitan) でのトラブルシューティング
 
-If you get an error like:
+もし次のようなエラーが出たら
 
 ```
 ld: library not found for -levent
 ```
 
-you need to reinstall the command line tools and then select the default active toolchain:
+コマンドラインツールを再インストールしてデフォルトのツールチェインを洗濯する必要があります。
 
 ```
 $ xcode-select --install

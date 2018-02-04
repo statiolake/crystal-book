@@ -1,16 +1,16 @@
-# On RedHat and CentOS
+# RedHat / CentOS
 
-In RedHat derived distributions, you can use the official Crystal repository.
+RedHat 系のディストリビューションでは、公式 Crystal レポジトリを利用できます。
 
-## Setup repository
+## レポジトリを設定する
 
-First you have to add the repository to your YUM configuration. For easy setup just run in your command line:
+まずはレポジトリを YUM の設定に加えましょう。簡単に設定するには次のようにコマンドラインで入力してください。
 
 ```
 curl https://dist.crystal-lang.org/rpm/setup.sh | sudo bash
 ```
 
-That will add the signing key and the repository configuration. If you prefer to do it manually execute:
+これで自動的に署名キーとレポジトリの設定が追加されます。もし手動で設定したければ、次のコマンドを実行してください。
 
 ```
 rpm --import https://dist.crystal-lang.org/rpm/RPM-GPG-KEY
@@ -22,16 +22,17 @@ baseurl = https://dist.crystal-lang.org/rpm/
 END
 ```
 
-## Install
-Once the repository is configured you're ready to install Crystal:
+## インストール
+
+レポジトリが設定されてしまえば、インストールの準備は完了です。
 
 ```
 sudo yum install crystal
 ```
 
-## Upgrade
+## アップグレード
 
-When a new Crystal version is released you can upgrade your system using:
+新しいバージョンの Crystal がリリースされたら、次のようにしてアップグレードできます。
 
 ```
 sudo yum update crystal

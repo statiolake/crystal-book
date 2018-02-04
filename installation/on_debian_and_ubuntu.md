@@ -1,16 +1,16 @@
-# On Debian and Ubuntu
+# Debian / Ubuntu
 
-In Debian derived distributions, you can use the official Crystal repository.
+Debian 系のディストリビューションでは、公式 Crystal レポジトリを利用できます。
 
-## Setup repository
+## レポジトリを設定する
 
-First you have to add the repository to your APT configuration. For easy setup just run in your command line:
+まずはレポジトリを APT の設定に加えましょう。簡単に設定するには次のようにコマンドラインで入力してください。
 
 ```
 curl https://dist.crystal-lang.org/apt/setup.sh | sudo bash
 ```
 
-That will add the signing key and the repository configuration. If you prefer to do it manually, execute the following commands as *root*:
+これで自動的に署名キーとレポジトリの設定が追加されます。もし手動で設定したければ、次のコマンドを **root 権限で** 実行してください。
 
 ```
 apt-key adv --keyserver keys.gnupg.net --recv-keys 09617FD37CC06B54
@@ -18,23 +18,24 @@ echo "deb https://dist.crystal-lang.org/apt crystal main" > /etc/apt/sources.lis
 apt-get update
 ```
 
-## Install
-Once the repository is configured you're ready to install Crystal:
+## インストール
+
+レポジトリが設定されてしまえば、インストールの準備は完了です。
 
 ```
 sudo apt-get install crystal
 ```
 
-Sometimes [you will need](https://github.com/crystal-lang/crystal/issues/4342) to install the package `build-essential` in order to run/build Crystal programs. You can install it with the command:
+場合によっては、Crystal のプログラムをコンパイル・実行するために、パッケージ `build-essential` が[必要になることがあります](https://github.com/crystal-lang/crystal/issues/4342)。このパッケージは次のコマンドでインストールすることができます。
 
 ```
 sudo apt-get install build-essential
 ```
 
 
-## Upgrade
+## アップグレード
 
-When a new Crystal version is released you can upgrade your system using:
+新しいバージョンの Crystal がリリースされたら、次のようにしてアップグレードできます。
 
 ```
 sudo apt-get update

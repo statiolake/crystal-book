@@ -1,25 +1,25 @@
-# Crystal Programming Language
+# プログラミング言語 Crystal
 
-This is the language reference for the Crystal programming language.
+これはプログラミング言語 Crystal のリファレンスです。
 
-Crystal is a programming language with the following goals:
+Crystal の目標は、
 
-* Have a syntax similar to Ruby (but compatibility with it is not a goal).
-* Be statically type-checked, but without having to specify the type of variables or method arguments.
-* Be able to call C code by writing bindings to it in Crystal.
-* Have compile-time evaluation and generation of code, to avoid boilerplate code.
-* Compile to efficient native code.
+* Ruby に似た文法を持つこと。 (ただし、互換性は目標ではありません)
+* 静的に型検査をする一方で、変数やメソッドの引数で型を明示しなくてよくすること。
+* Crystal 言語でバインディングを書いて C 言語のコードを呼び出せるようにすること。
+* 時にコンパイル時に評価やコードの生成を行い、ボイラープレートなコードを減らすこと。
+* 効率的なネイティブコードへコンパイルすること。
 
-## Contributing to the Language Reference
+です。
 
-Do you consider yourself a helpful person? If you find bugs or sections
-which need more clarification you're welcome to contribute to this
-language reference. You can submit a pull request to this repository:
-https://github.com/crystal-lang/crystal-book
+## リファレンスへの貢献
 
-Thank you very much!
+このリファレンスのバグを見つけた時や、もっと分かりやすくできる部分を見つけた時はぜひ助けてください。プルリクエストは次のレポジトリへ。
+<http://dummy/>
 
-### Building and Serving Locally
+よろしくお願いします。
+
+### ローカル環境でのビルド・テスト
 
 ```
 $ git clone https://github.com/crystal-lang/crystal-book.git
@@ -38,8 +38,7 @@ Serving book on http://localhost:4000
 
 ```
 
-Html output will be in `_book` folder (some links won't work if opening the files locally).
-There is also a docker environment to avoid installing dependencies globally:
+`_book` フォルダに HTML ファイルが出力されます。ローカルでファイルを開いていると、リンクの一部が正しく設定されない可能性があります。依存関係をグローバルにインストールするのが嫌なときは、 docker 環境も用意しています。
 
 ```
 $ docker-compose up
@@ -50,6 +49,6 @@ gitbook_1  | Restart after change in file node_modules/.bin
 ...
 ```
 
-### Adding a page
+### ページの追加
 
-To add a page, create a markdown file in the desired location. Example: `overview/hello_world.md`. Then, add a link in the `SUMMARY.md` file which acts as the navigation for the language reference.
+ページを追加するには、好きなところに Markdown のファイルを作成してください。例えば `overview/hello_world.md` など。その後、そのファイルへのリンクを `SUMMARY.md` に追加してください。このファイルがリファレンスのナビゲーションバーになります。

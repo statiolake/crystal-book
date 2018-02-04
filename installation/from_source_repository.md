@@ -1,23 +1,23 @@
-# From sources
+# ソースから
 
-If you want to contribute then you might want to install Crystal from sources.
+もし言語に貢献したいと思ってくださるなら、 Crystal をソースからインストールしたいかもしれません。
 
-1. [Install the latest Crystal release](https://crystal-lang.org/docs/installation). To compile Crystal, you need Crystal :).
+1. [Crystal の最新版リリースをインストールする](https://crystal-lang.org/docs/installation). Crystal をコンパイルするのには Crystal が必要なのです。(^_-)
 
-2. Make sure a supported LLVM version is present in the path. Currently, Crystal supports LLVM 3.8, 3.9 and 4.0. When possible, use the latest one. If you are using Mac and the Homebrew formula, this will be automatically configured for you if you install Crystal adding `--with-llvm` flag.
+2. パスにサポートされているバージョンの LLVM がインストールされていることを確認してください。現在のところ、 Crystal は LLVM 3.8, 3.9 と 4.0 をサポートしています。可能なら、最新のものを使ってください。もし Mac で Homebrew を使っているのなら、 Crystal をインストールするときに `--with-llvm` オプションを付けると自動的に設定されます。
 
-3. Make sure to install [all the required libraries](https://github.com/crystal-lang/crystal/wiki/All-required-libraries). You might also want to read the [contributing guide](https://github.com/crystal-lang/crystal/blob/master/CONTRIBUTING.md).
+3. [必要な全てのライブラリ](https://github.com/crystal-lang/crystal/wiki/All-required-libraries) がインストールされていることを確認してください。[貢献ガイド](https://github.com/crystal-lang/crystal/blob/master/CONTRIBUTING.md) も読みましょう。
 
-4. Clone the repository:
+4. リポジトリをクローンしてください。
 
 ```
 git clone https://github.com/crystal-lang/crystal.git
 ```
 
-5. Run `make` to build your own version of the compiler
-6. Run `make spec` to ensure all specs pass, and you've installed everything correctly.
-7. Use `bin/crystal` to run your crystal files
+5. コンパイラをビルドするために `make` コマンドを実行してください。
+6. `make spec` とすると全部の仕様をパスしているか、と、全てのものが適切にインストールできているかを確認できます。
+7. `bin/crystal` がビルドされたバイナリです。
 
-If you would like more information about the new `bin/crystal`, check out the [using the compiler](https://crystal-lang.org/docs/using_the_compiler/) documentation.
+新しい `bin/crystal` についてもっと知りたければ [コンパイラを使う](https://crystal-lang.org/docs/using_the_compiler/) をチェックしてください。
 
-Note: The actual binary is built in to `.build/crystal`, but the `bin/crystal` wrapper script is what you should use to run crystal.
+注意: 実際のバイナリは `.build/crystal` にビルドされますが、実行するべきなのはラッパースクリプトの `bin/crystal` です。

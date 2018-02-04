@@ -1,10 +1,10 @@
-# On Gentoo Linux
+# Gentoo Linux
 
-Gentoo Linux includes the Crystal compiler in the main overlay.
+Gentoo Linux はメインオーバーレイに Crystal のコンパイラが含まれています。
 
-## Configuration
+## 設定
 
-You might want to take a look at the available configuration flags first:
+利用可能な設定フラグは次の通りです。
 
 ```
 # equery u dev-lang/crystal
@@ -19,7 +19,7 @@ You might want to take a look at the available configuration flags first:
  + - yaml     : Use the dev-libs/libyaml library to enable Crystal yaml module
 ```
 
-## Install
+## インストール
 
 ```
 su -
